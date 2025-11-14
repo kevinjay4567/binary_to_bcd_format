@@ -27,6 +27,14 @@ Bcd::Bcd() {
   this->d_mil = {0b0000};
 }
 
+Bcd::Bcd(std::bitset<4> u, std::bitset<4> d, std::bitset<4> c, std::bitset<4> u_m, std::bitset<4> d_m) {
+    this->unidad = u;
+    this->decena = d;
+    this->centena = c;
+    this->u_mil = u_m;
+    this->d_mil = d_m;
+}
+
 // private methods
 void Bcd::shift(std::bitset<4> &b1, bool bit) {
   b1 <<= 1;

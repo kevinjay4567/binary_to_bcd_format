@@ -16,6 +16,7 @@ public:
   std::bitset<4> d_mil;
 
   Bcd();
+  Bcd(std::bitset<4> u, std::bitset<4> d, std::bitset<4> c, std::bitset<4> u_m, std::bitset<4> d_m);
 
   std::string to_string();
   void update(bool bit);
